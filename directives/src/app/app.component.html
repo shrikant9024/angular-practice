@@ -1,0 +1,17 @@
+<div>
+  <h1 *ngIf="isLoggedIn">welcome {{ username }}</h1>
+  <h1 *ngIf="!isLoggedIn">PLEASE LOGIN</h1>
+  <h1 *ngIf="isLoggedIn && check">both checks are done</h1>
+</div>
+
+<ul>
+  <li *ngFor="let name of namesArray; let i = index">
+    {{ i }}{{ " " }}{{ name }}
+  </li>
+</ul>
+
+<div [ngSwitch]="grade">
+  <p *ngSwitchCase="'A'">excellent</p>
+  <p>good</p>
+  <p>poor</p>
+</div>

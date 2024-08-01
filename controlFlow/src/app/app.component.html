@@ -1,0 +1,19 @@
+<!-- {{ title }}
+
+@if (a>b){
+{{ a }} is greater than {{ b }} }@else if (a<b) {{{a}} is less than {{b}}} -->
+
+<!-- @for (item of items; track item.id; let i =$index; let total = $count) {
+{{ i }}{{ " " }}{{ item.name }} {{ total }}
+} -->
+
+<h1>{{ title | lowercase }}</h1>
+<h1>{{ title | uppercase }}</h1>
+
+<h1>toda is {{ today }}</h1>
+<h1>toda is {{ today | date }}</h1>
+<h1>toda is {{ today | date : "fullDate" | uppercase }}</h1>
+
+<p>{{ currency | percent : "" }}</p>
+
+<p>{{ value | append : "abcd" | uppercase }}</p>
